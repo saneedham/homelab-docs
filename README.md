@@ -85,3 +85,31 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Keeps documentation current and eases onboarding.
 
+
+## 4.2 System: Torridge
+
+**Hardware**: Legacy laptop (model TBD) configured as a persistent, always‑on server.
+
+**Purpose**: Host Docker containers that perform audio/video processing workloads.
+
+**Key directories**:
+- `/srv/` – top‑level filesystem for all service data.
+  - `/srv/work/` – workspace for file ingest and processing.
+    - Sub‑folders within `/srv/work/` hold job‑specific data and intermediate results.
+
+**Network configuration**:
+- Static IP: **10.0.0.8**.
+- Shares the same shell environment as Severn and other Raspberry Pi devices.
+
+**Deployment**:
+- Ansible role `torridge/docker` manages Docker install, container orchestration (docker‑compose or Docker‑Swarm), and CI‑driven image builds.
+- Volumes for `/srv/` are mounted in containers to preserve data across restarts.
+
+**Compliance with rules**:
+- **Rule 5** – Configuration delivered via Ansible.
+- **Rule 14** – Any secrets for container registries or media services are pulled from Vault.
+- **Rule 18** – Container image tests and functional smoke tests are part of the CI pipeline.
+- **Rule 12** – Tag releases after significant configuration changes.
+- **Rule 17** – Monitor memory and disk usage on the laptop; alert if thresholds are exceeded.
+- **Rule 3** – A `docs/torridge/` subfolder within the repository documents the host’s role and usage.
+
