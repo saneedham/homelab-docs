@@ -25,3 +25,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Each of the three distinct systems (e.g., router, media server, edge compute) should retain its dedicated responsibilities. Avoid duplicating services or over‑consolidating roles unless a clear benefit exists.
 
+
+7. Adopt a Test‑Driven Development (TTD) approach for new applications.
+
+*Explanation:* Write tests first, then implement code to satisfy them. This ensures quality, eases refactoring, and produces a clear specification of expected behavior.
+
