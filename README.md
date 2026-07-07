@@ -30,3 +30,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Write tests first, then implement code to satisfy them. This ensures quality, eases refactoring, and produces a clear specification of expected behavior.
 
+
+8. Git commit messages must follow the Google Conventional Commit style.
+
+*Explanation:* Commits should start with a type (feat, fix, docs, style, refactor, test, chore) followed by a short subject line.
+
