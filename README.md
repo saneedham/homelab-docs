@@ -15,3 +15,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Store config snippets in your dot‑files repo and symlink or use a tool such as GNU Stow or home‑bloat to apply them to each host.
 
+
+5. Deploy system configuration with Ansible (and Ansible Roles).
+
+*Explanation:* Use Ansible inventories, playbooks, and role conventions to provision and maintain each host. Keep the roles reusable across environments.
+
