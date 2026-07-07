@@ -40,3 +40,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Develop in separate feature branches (e.g., `feat/<short-identifier>`), bug fix branches (`fix/<id>`), or release branches (`release/<version>`). Merge via PR and keep the main branch stable.
 
+
+10. Pull requests (PRs) are required for merging any branch into `main`.
+
+*Explanation:* Use a PR process to review changes, run CI tests, and document the intent before integration.
+
