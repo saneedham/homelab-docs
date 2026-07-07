@@ -20,3 +20,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Use Ansible inventories, playbooks, and role conventions to provision and maintain each host. Keep the roles reusable across environments.
 
+
+6. Respect system roles across the homelab.
+
+*Explanation:* Each of the three distinct systems (e.g., router, media server, edge compute) should retain its dedicated responsibilities. Avoid duplicating services or over‑consolidating roles unless a clear benefit exists.
+
