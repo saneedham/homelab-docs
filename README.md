@@ -50,3 +50,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Define reusable workflows that run lint, tests, and security scans on push or PR events, ensuring consistent build quality.
 
+
+12. Use schematic versioning and tag releases appropriately.
+
+*Explanation:* Whenever a state change is versioned (e.g., an IaC change, config file update), create a semantic‑style tag that reflects the change magnitude. This makes rollbacks and audits straightforward.
+
