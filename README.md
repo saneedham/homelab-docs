@@ -35,3 +35,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Commits should start with a type (feat, fix, docs, style, refactor, test, chore) followed by a short subject line.
 
+
+9. Use branching for all changes; branches should be named descriptively.
+
+*Explanation:* Develop in separate feature branches (e.g., `feat/<short-identifier>`), bug fix branches (`fix/<id>`), or release branches (`release/<version>`). Merge via PR and keep the main branch stable.
+
