@@ -10,3 +10,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 > *This is the start of the documentation. Add more sections as the lab grows.*
 
+
+4. System configuration: Where possible, prefer a dot‑files style of configuration management.
+
+*Explanation:* Store config snippets in your dot‑files repo and symlink or use a tool such as GNU Stow or home‑bloat to apply them to each host.
+
