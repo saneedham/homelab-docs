@@ -60,3 +60,28 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Publishing artifacts as release assets makes them discoverable, version‑controlled, and accessible for deployment or download.
 
+
+14. Store secrets and credentials in a central, encrypted vault (HashiCorp Vault, AWS SSM Parameter Store, etc.) and inject them via Ansible or container secrets.
+
+*Explanation:* Prevents accidental leakage of keys, passwords, or TLS certificates in codebases or public repositories.
+
+15. All changes (CI builds, deployments, configuration updates) must generate traceable logs in a central monitoring system (Elasticsearch/Prometheus/Grafana) and be retained for 90 days when required.
+
+*Explanation:* Provides forensic visibility and supports internal or regulatory audits.
+
+16. Lock dependencies for all languages and tools (e.g., Pip‑freeze, Bundler Gemfile.lock, npm package-lock.json, Go modules) and run a scheduled vulnerability scan using tools such as OWASP Dependency-Check, GitHub Dependabot, or Trivy.
+
+*Explanation:* Keeps the software stack predictable and alerts about exploitable libraries before deployment.
+
+17. Document and monitor CPU, RAM, and storage limits for each host and container; trigger alerts when thresholds are exceeded.
+
+*Explanation:* Prevents resource exhaustion and facilitates capacity planning.
+
+18. Every pull request must run unit, integration, and smoke tests; test coverage must not fall below 80 %.
+
+*Explanation:* Maintains code health and flags regressions early.
+
+19. All README, CONTRIBUTING, CHANGELOG, and ROADMAP files must be updated on each release.
+
+*Explanation:* Keeps documentation current and eases onboarding.
+
