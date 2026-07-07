@@ -45,3 +45,8 @@ This repository holds markdown documentation for all homelab projects, configura
 
 *Explanation:* Use a PR process to review changes, run CI tests, and document the intent before integration.
 
+
+11. Leverage GitHub Actions for CI and quality control wherever practicable.
+
+*Explanation:* Define reusable workflows that run lint, tests, and security scans on push or PR events, ensuring consistent build quality.
+
